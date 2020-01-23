@@ -27,20 +27,24 @@
   ```
       composer install
   ```
-5. Update database information in the .env file.
-6. Run migrations and seeds:
+5. Publsih module config and routes and view
+    ```
+        php artisan vendor:publish
+    ```
+6. Update database information in the .env file.
+7. Run migrations and seeds:
     ```bash
     php artisan migrate --seed
     ```
-7. Generate an encryption key for the app:
+8. Generate an encryption key for the app:
   ```
       php artisan key:generate
   ```
-8. Run Servers
+9. Run Servers
   ```
       php artisan serve
   ```
-9. If you need to run test cases
+10. If you need to run test cases
 ```
       vendor/bin/phpunit tests
 ```
