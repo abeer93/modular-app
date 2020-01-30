@@ -37,7 +37,7 @@
     ```
       php artisan vendor:publish
     ```
-    and choose App\Article\ArticleServiceProvider from the list which will display it will be 1
+    and choose App\Article\ArticleServiceProvider from the list will be displayed it will be 1
     
 6. Update database information in the .env file.
 7. Run migrations and seeds:
@@ -54,7 +54,7 @@
   ```
 10. If you need to run test cases
 ```
-  vendor/bin/phpunit tests
+  vendor/bin/phpunit
 ```
 
 Now, open your web browser and got `http://localhost:8000` .
