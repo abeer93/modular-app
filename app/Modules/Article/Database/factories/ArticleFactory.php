@@ -9,7 +9,6 @@ use Faker\Generator;
 $factory->define(Article::class, function (Generator $faker) {
     return [
         'title'       => $faker->sentence,
-        'content'     => $faker->paragraph,
-        'image'       => "pexels-photo-302549.jpeg"
+        'content'     => $faker->paragraph
     ];
 });

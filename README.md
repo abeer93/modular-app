@@ -37,6 +37,8 @@
     ```
       php artisan vendor:publish
     ```
+    and choose App\Article\ArticleServiceProvider from the list which will display it will be 1
+    
 6. Update database information in the .env file.
 7. Run migrations and seeds:
   ```bash

@@ -47,7 +47,9 @@
                         </div>
                     </div>
                     <p>{{$article['content']}}</p>
-                    <img src="{{ asset($article['image']) }}" style="width:350px; height:150px">
+                    @if(!empty($article['image']))
+                        <img src="{{ asset($article['image']) }}" style="width:350px; height:150px">
+                    @endif
                 </div>
                 <hr />
             @endforeach
