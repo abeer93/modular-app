@@ -1,5 +1,5 @@
 # Simple Modular Application
-    CRUD opeartion over article module
+    Simple laravel application implement creating your own module inside laravel app.
 
 ## Requirement
 
@@ -39,9 +39,9 @@
     ```
 6. Update database information in the .env file.
 7. Run migrations and seeds:
-    ```bash
-  php artisan migrate --seed
-    ```
+  ```bash
+    php artisan migrate --seed
+  ```
 8. Generate an encryption key for the app:
   ```
     php artisan key:generate
