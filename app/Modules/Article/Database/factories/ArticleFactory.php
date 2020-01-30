@@ -10,9 +10,6 @@ $factory->define(Article::class, function (Generator $faker) {
     return [
         'title'       => $faker->sentence,
         'content'     => $faker->paragraph,
-        'image'       => "pexels-photo-302549.jpeg",
-        'admin_id' => function () {
-            return factory(User::class)->create()->id;
-        }
+        'image'       => "pexels-photo-302549.jpeg"
     ];
 });

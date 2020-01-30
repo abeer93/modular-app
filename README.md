@@ -12,41 +12,47 @@
 ## Installation
 1. Clone the repo via this url 
   ```
-      git clone https://github.com/abeer93/modular-app.git
+    git clone https://github.com/abeer93/modular-app.git
   ```
 
 2. Enter inside the folder
 ```
-    cd modular-app
+  cd modular-app
 ```
 3. Create a `.env` file by running the following command 
   ```
-      cp .env.example .env
+    cp .env.example .env
   ```
 4. Install various packages and dependencies: 
   ```
-      composer install
+    composer install
   ```
 5. Publsih module config and routes and view
+    
+    a. add module service provider to provider array in config/app
     ```
-        php artisan vendor:publish
+      App\Article\ArticleServiceProvider::class,
+    ```
+    b. load module files
+    ```
+      php artisan vendor:publish
     ```
 6. Update database information in the .env file.
 7. Run migrations and seeds:
     ```bash
-    php artisan migrate --seed
+  php artisan migrate --seed
     ```
 8. Generate an encryption key for the app:
   ```
-      php artisan key:generate
+    php artisan key:generate
   ```
 9. Run Servers
   ```
-      php artisan serve
+    php artisan serve
   ```
 10. If you need to run test cases
 ```
-      vendor/bin/phpunit tests
+  vendor/bin/phpunit tests
 ```
 
 Now, open your web browser and got `http://localhost:8000` .
